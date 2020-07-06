@@ -108,3 +108,8 @@ i.half {
     opacity: 0;
   }
 }
+@media (max-width:400px){
+  html,body{
+    font-size: 5px;
+  }
+}

@@ -188,4 +188,7 @@ body {
   .card-text {
     max-height: 50%;
   }
+  .features{
+    width: 100%;
+  }
 }
