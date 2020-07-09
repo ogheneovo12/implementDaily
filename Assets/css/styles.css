@@ -243,6 +243,7 @@ svg {
 .implemented-image {
   height: 45%;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 .implemented-text {
   padding: 1rem;
@@ -304,4 +305,18 @@ svg {
   .open {
     display: block;
   }
+}
+
+.day{
+  position: absolute;
+  padding:1rem;
+  top:0;
+  right: 0;
+  background-color: #101e4e;
+  margin:2rem;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  font-size:1rem;
 }
