@@ -20,13 +20,14 @@
       rgba(44, 59, 66, 0.9) 100%,
       rgba(44, 59, 66, 0.9) 100%
     ),
-    url("../Assets/images/system.png");
+    url("../Assets/images/fact2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
+
 .theme-dark .card .card-footer-info {
     background: var(--theme-dark-success);
 }
