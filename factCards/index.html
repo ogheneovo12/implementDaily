@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css" >
+    <link rel="stylesheet" href="./themeDark.css" >
+    <link rel="stylesheet" href="./themeLight.css" >
+    <title>Facts Card</title>
+</head>
+<body class="theme-dark">
+    <div class="toggle-theme">
+        <button class="btn"></button>
+    </div>
+         <div class="container">
+             <div class="card">
+                 <div class="card-header">
+                     <h1>Nutrition Facts</h1>
+                 </div>
+                 <div class="card-mid-circle">
+                     <div class="circle">
+                         <div class="inner">
+                         <p><span class="figure">1300</span>kcel</p>
+                          <p>68% of goal</p>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="card-footer-stat">
+                     <div class="stats"> 
+                         <p class="nutrient">protien</p>
+                         <p class="percent">40%</p>
+                     </div>
+                     <div class="stats"> 
+                        <p class="nutrient">protien</p>
+                        <p class="percent">40%</p>
+                     </div>
+                    <div class="stats"> 
+                        <p class="nutrient">protien</p>
+                        <p class="percent">40%</p>
+                    </div>
+                 </div>
+                 <div class="card-footer-info">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, rerum.
+                     Corporis, rerum.Corporis, rerum.
+                 </div>
+             </div>
+         </div>
+         <script>
+             let isDark = true
+            const body = document.querySelector("body");
+            const toggler =  document.querySelector(".toggle-theme")
+            console.log(toggler)
+           toggler.addEventListener('click',function(){
+                 if(isDark){
+                    body.classList.add("theme-dark")
+                    body.classList.remove("theme-light")
+                 }else{
+                    body.classList.remove("theme-dark")
+                    body.classList.add("theme-light")
+                 }
+               
+                 isDark = !isDark;
+            })
+         </script>
+</body>
+</html>
