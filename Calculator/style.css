@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-primary:#2E3B41;
+    --bg-secondary:#34434A;
+    --btn-active:#D81A60;
+    --shadow: -0rem 5rem 10rem rgba(0, 0, 0, 0.3);
+}
+
+html,body{
+    font-size: 10px;
+    font-family:"Cairo", Arial, Helvetica, sans-serif;
+    background-color:var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calbody{
+    height: 40rem;
+    max-height: fit-content;
+    width: 30rem;
+    background: var(--bg-secondary);
+    box-shadow:var(--shadow) ;
+   
+}
+#calbutton{
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  height:100%;
+  padding:0 1%;
+  font-size: 0px;
+}
+input[type="text"]{
+    width:100%;
+    height:2.7rem;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: right;
+    padding:2rem;
+    border: none;
+    color:var(--bg-primary)
+}
+input#lcdu{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+button{
+    width:24%;
+    font-size: 1.5rem;
+    border: none;
+    background:transparent;
+    border-width:1px 1px 0 0;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.2);
+    padding:2.3rem 2rem;
+    color:#fff;
+    outline: none;
+    margin:0px;
+}
+button:hover{
+    background: var(--btn-active);
+}
+#calbutton button:nth-child(4n){
+    border-right-width:0px;
+}
+
+@media (max-width:314px){
+    .calbody{
+        width:100%;
+        height:100%;
+    }
+
+}
