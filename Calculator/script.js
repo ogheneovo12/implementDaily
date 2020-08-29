@@ -110,10 +110,6 @@ const handleOperatorClick = (e) => {
     return;
   }
   firstNumber = parseInt(output.value);
-  if (e.target.value == "^") {
-    operation = "**";
-    return;
-  }
   operation = e.target.value;
 };
 
@@ -123,6 +119,9 @@ function calculate() {
     secondNumber = output.value;
     if (result) {
       firstNumber = result;
+    }
+    if (operation == "^") {
+      operation = "**";
     }
     result = eval(
       `${parseInt(firstNumber)} ${operation} ${parseInt(secondNumber)}`
