@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo_tool">
+           <img src="./img/icon/hamburger.svg" />
+           <h2 class="logo">
+             <span>Woe</span>Fel
+           </h2>
+        </div>
+        <div class="search_box">
+            <input type="text" placeholder="Search.."/>
+        </div>
+        <div class="gravatar">
+          <div class='gravatar__img' data-bg="./img/gravatar.png">
+              
+          </div>
+           <p>Randall Cohen &#9660; </p>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="team_details">
+                <button class='btn-team'>
+                    <img src="./img/icon/rocket.svg" />
+                </button>
+            </div>
+            <div class="toggle_btn">
+                <button class='active'>All</button>
+                <button>My Team</button>
+            </div>
+        </section>
+        <section class="teams">
+            <div class="grid-wrapper">
+                <div class='grid-item card'>
+                   <div class="card__top">
+                         <p>
+                            &#10084;
+                         </p>
+                   </div>
+                   <div class="card__body">
+                          <div class="avatar" data-bg="./img/girl">
+
+                          </div>
+                          <h3>Marie Walters</h3>
+                          <p>mariewalters@gmail.com</p>
+                  </div>
+                  <div class="card__bottom">
+                   <button>Assign</button>
+                   <button> <i>&#x1F441;</i> views</button>
+                </div>
+                </div>
+                <div class='grid-item card'>
+                    <div class="card__top">
+                          <p>
+                             &#10084;
+                          </p>
+                    </div>
+                    <div class="card__body">
+                           <div class="avatar" data-bg="./img/girl">
+ 
+                           </div>
+                           <h3>Marie Walters</h3>
+                           <p>mariewalters@gmail.com</p>
+                   </div>
+                   <div class="card__bottom">
+                    <button>Assign</button>
+                    <button><i>&#x1F441;</i> views</button>
+                 </div>
+                 </div>
+                 <div class='grid-item card'>
+                    <div class="card__top">
+                          <p>
+                             &#10084;
+                          </p>
+                    </div>
+                    <div class="card__body">
+                           <div class="avatar" data-bg="./img/girl">
+ 
+                           </div>
+                           <h3>Marie Walters</h3>
+                           <p>mariewalters@gmail.com</p>
+                   </div>
+                   <div class="card__bottom">
+                    <button>Assign</button>
+                    <button><i>&#x1F441;</i> views</button>
+                 </div>
+                 </div>
+                 <div class='grid-item card'>
+                    <div class="card__top">
+                          <p>
+                             &#10084;
+                          </p>
+                    </div>
+                    <div class="card__body">
+                           <div class="avatar" data-bg="./img/girl">
+ 
+                           </div>
+                           <h3>Marie Walters</h3>
+                           <p>mariewalters@gmail.com</p>
+                   </div>
+                   <div class="card__bottom">
+                    <button>Assign</button>
+                    <button><i>&#x1F441;</i> views</button>
+                 </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const grbg = document.querySelector(".gravatar__img");
+        if(grbg){
+            grbg.style.backgroundImage = `url(${grbg.dataset.bg})`;
+        } 
+        document.querySelectorAll(".avatar").forEach((elem,i)=>{
+            elem.style.backgroundImage = `url(${elem.dataset.bg}${i + 1}.png)`
+        })
+
+    </script>
+</body>
+</html>
