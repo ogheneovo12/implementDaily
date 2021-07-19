@@ -245,6 +245,22 @@ header {
                 border: none;
               }
             }
+            .grouped{
+              display: flex;
+              align-items: center;
+
+              width: 100%;
+              input{
+                width: 40%;
+                padding-left: 10px;
+              }
+              small{
+                width: 30px;
+                height: 5px;
+                background: #000;
+                margin-left: 5px;
+              }
+            }
           }
         }
       }

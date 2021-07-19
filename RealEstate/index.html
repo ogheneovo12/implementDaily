@@ -51,16 +51,21 @@
                     </div>
                     <div class="search">
                         <div class="control">
-                            <label>location</label>
-                            <input type="text" value="lagos" />
+                            <label for="location">location</label>
+                            <input type="text" value="lagos"  id="location" placeholder="enter location"/>
                         </div>
                         <div class="control">
-                            <label>Property Type</label>
-                            <input type="text" value="Modern House" />
+                            <label for="type" >Property Type</label>
+                            <input type="text" value="Modern House"  id="type" placeholder="enter house type" />
                         </div>
                         <div class="control">
-                            <label>Average Price</label>
-                            <input type="text" value="lagos" />
+                            <label for="price">Average Price ($)</label>
+                            <div class="grouped">
+                                <input type="text" id="price" value="10,000" placeholder="10,000"/>
+                                <small></small>
+                                <input type="text" id="price" value="10,000" placeholder="10,000"/>
+                            </div>
+                           
                         </div>
                         <div class="control action">
                             <button class="btn">
